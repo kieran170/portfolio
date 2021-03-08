@@ -93,7 +93,7 @@ export default function ProjectsPage({ path }) {
         "Ziut is a project i started before the Northcoders bootcamp, using only HTML and CSS which was all self taught",
       projectTechnologies: ["HTML", "CSS"],
       photo1: ziutHomePage,
-      photo1text: "The home page to slugboy brewery",
+      photo1text: "The home page for ziut ",
     };
     const slugboyBrewery = {
       date: "January 2020",
@@ -184,55 +184,107 @@ export default function ProjectsPage({ path }) {
             </a>
           )}
         </div>
-        <div className="project-images">
-          <img
-            className="project-photo"
-            src={photo1}
-            alt="first project page"
-          />
-          <p>{photo1text}</p>
-          {photo2 && (
-            <>
-              <img
-                className="project-photo"
-                src={photo2}
-                alt="second project page"
-              />
-              <p>{photo2text}</p>{" "}
-            </>
-          )}
-          {photo3 && (
-            <>
-              <img
-                className="project-photo"
-                src={photo3}
-                alt="third project page"
-              />
-              <p>{photo3text}</p>
-            </>
-          )}
-          {photo4 && (
-            <>
-              {" "}
-              <img
-                className="project-photo"
-                src={photo4}
-                alt="fourth project page"
-              />
-              <p>{photo4text}</p>{" "}
-            </>
-          )}
-          {photo5 && (
-            <>
-              <img
-                className="project-photo"
-                src={photo5}
-                alt="fourth project page"
-              />
-              <p>{photo5text}</p>{" "}
-            </>
-          )}
-        </div>
+        {url !== "gig-buddy" ? (
+          <div className="project-images">
+            <img
+              className="project-photo"
+              src={photo1}
+              alt="first project page"
+            />
+            <p>{photo1text}</p>
+            {photo2 && (
+              <>
+                <img
+                  className="project-photo"
+                  src={photo2}
+                  alt="second project page"
+                />
+                <p>{photo2text}</p>{" "}
+              </>
+            )}
+            {photo3 && (
+              <>
+                <img
+                  className="project-photo"
+                  src={photo3}
+                  alt="third project page"
+                />
+                <p>{photo3text}</p>
+              </>
+            )}
+            {photo4 && (
+              <>
+                {" "}
+                <img
+                  className="project-photo"
+                  src={photo4}
+                  alt="fourth project page"
+                />
+                <p>{photo4text}</p>{" "}
+              </>
+            )}
+            {photo5 && (
+              <>
+                <img
+                  className="project-photo"
+                  src={photo5}
+                  alt="fourth project page"
+                />
+                <p>{photo5text}</p>{" "}
+              </>
+            )}
+          </div>
+        ) : (
+          <div className="project-images">
+            <img
+              className="project-photo-gig-buddy"
+              src={photo1}
+              alt="first project page"
+            />
+            <p className="project-photo-text">{photo1text}</p>
+            {photo2 && (
+              <>
+                <img
+                  className="project-photo-gig-buddy"
+                  src={photo2}
+                  alt="second project page"
+                />
+                <p className="project-photo-text">{photo2text}</p>{" "}
+              </>
+            )}
+            {photo3 && (
+              <>
+                <img
+                  className="project-photo-gig-buddy"
+                  src={photo3}
+                  alt="third project page"
+                />
+                <p className="project-photo-text">{photo3text}</p>
+              </>
+            )}
+            {photo4 && (
+              <>
+                {" "}
+                <img
+                  className="project-photo-gig-buddy"
+                  src={photo4}
+                  alt="fourth project page"
+                />
+                <p className="project-photo-text">{photo4text}</p>{" "}
+              </>
+            )}
+            {photo5 && (
+              <>
+                <img
+                  className="project-photo-gig-buddy"
+                  src={photo5}
+                  alt="fourth project page"
+                />
+                <p className="project-photo-text">{photo5text}</p>{" "}
+              </>
+            )}
+          </div>
+        )}
       </main>
       <Footer />
     </>

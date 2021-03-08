@@ -23,6 +23,12 @@
   margin-bottom: 30px;
 }
 .project-photo {
-  height: 700px;
-  max-width: 900px;
+  max-width: 100%;
+}
+.project-photo-gig-buddy {
+  max-height: 700px;
+}
+.project-photo-text {
+  width: 40%;
+  margin-left: 50px;
 }

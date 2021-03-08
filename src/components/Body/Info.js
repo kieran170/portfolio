@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as Mail } from "../../images/Mail.svg";
+import me from "../../images/me.jpg";
 
 export default function Info() {
   return (
@@ -9,6 +10,7 @@ export default function Info() {
       <p className="body-info-text-description">
         I'm Kieran, a Junior Software Engineer
       </p>
+      <img className="me-photo" src={me} alt="me" />
       <p className="body-info-text">
         A <b>Northcoders Graduate </b> with a natural sense for
         <b> problem-solving </b>
@@ -24,10 +26,12 @@ export default function Info() {
         <li className="list-items">PSQL</li>
         <li className="list-items">JSX</li>
       </ul>
-      <button className="get-in-touch-button">
-        <Mail />
-        <p get-in-touch-button-text>Get in touch</p>
-      </button>
+      <a href="mailto:kieran170@hotmail.co.uk">
+        <button className="get-in-touch-button">
+          <Mail />
+          <p get-in-touch-button-text>Get in touch</p>
+        </button>
+      </a>
     </div>
   );
 }

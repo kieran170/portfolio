@@ -40,14 +40,12 @@
   font-size: 16px;
 }
 .get-in-touch-button {
-  font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   border-radius: 25px;
-  background-color: teal;
+  background-image: linear-gradient(#2c96dd, #6c53df);
   color: white;
   padding: 12px;
-  margin-top: 16px;
 }
 .get-in-touch-button-text {
   margin: 2px 0 0 6px;
@@ -73,7 +71,7 @@
   font-size: 14px;
   line-height: 20px;
   border-radius: 25px;
-  background-color: teal;
+  background-image: linear-gradient(#2c96dd, #6c53df);
   color: white;
   padding: 12px;
   margin-top: 16px;
@@ -81,7 +79,7 @@
 }
 .line {
   width: 7%;
-  border-bottom: 2px green solid;
+  border-bottom: 1px solid #2c96dd;
 }
 .project-info {
   width: 50%;
@@ -91,4 +89,7 @@
   text-decoration: none;
   color: white;
   font-weight: bold;
+}
+.me-photo {
+  height: 300px;
 }

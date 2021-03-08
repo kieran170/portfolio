@@ -3,6 +3,7 @@
   left: 0;
   width: 100%;
   border-top: 0.5px solid rgba(255, 255, 255, 0.3);
+  margin-top: 50px;
 }
 .footer-text {
   font-size: 12px;
