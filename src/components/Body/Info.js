@@ -7,10 +7,10 @@ export default function Info() {
     <div className="body-info-container">
       <p className="body-info-name-title">Kieran Cookson</p>
       <p className="line"></p>
-      <p className="body-info-text-description">
-        I'm Kieran, a Junior Software Engineer
-      </p>
       <img className="me-photo" src={me} alt="me" />
+      <p className="body-info-text-description">
+        I'm Kieran,<br></br> a Junior Software Engineer
+      </p>
       <p className="body-info-text">
         A <b>Northcoders Graduate </b> with a natural sense for
         <b> problem-solving </b>
@@ -23,7 +23,7 @@ export default function Info() {
         <li className="list-items">React Native</li>
         <li className="list-items">Node Js</li>
         <li className="list-items">Axios</li>
-        <li className="list-items">PSQL</li>
+        <li className="list-items">SQL/PSQL</li>
         <li className="list-items">JSX</li>
       </ul>
       <a href="mailto:kieran170@hotmail.co.uk">
