@@ -1,0 +1,18 @@
+.header-container {
+  height: 108px;
+}
+.header-text-work {
+  margin-top: 32px;
+  font-size: 20px;
+  display: inline-flex;
+}
+.header-Github {
+  display: inline-flex;
+  font-size: 20px;
+  margin-left: 80%;
+}
+.header-Linkedin {
+  display: inline-flex;
+  font-size: 20px;
+  margin-left: 1%;
+}

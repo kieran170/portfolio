@@ -1,0 +1,57 @@
+.body-info-container {
+  border: 1px white solid;
+  width: 35%;
+  display: inline-flex;
+}
+.body-info-text-description {
+  font-size: 60px;
+  width: 450px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.body-info-name-title {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.body-info-text {
+  font-size: 16px;
+  width: 380px;
+  margin-top: 20px;
+}
+.list-container {
+  height: 152px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 60%;
+  list-style: none;
+  padding-left: 0;
+}
+.list-items::before {
+  content: ". ";
+  color: #2c96dd;
+}
+.list-items {
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.get-in-touch-button {
+  width: 128px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 25px;
+  background-color: teal;
+  color: white;
+  padding: 12px;
+  margin-top: 16px;
+}
+.projects-list-container {
+  display: inline-flex;
+}
+.projects-text {
+  color: white;
+}
