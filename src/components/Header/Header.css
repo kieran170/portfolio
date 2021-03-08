@@ -16,3 +16,6 @@
   font-size: 20px;
   margin-left: 1%;
 }
+.header-text-work:hover {
+  border-bottom: 2px green solid;
+}

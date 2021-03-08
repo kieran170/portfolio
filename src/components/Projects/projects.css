@@ -1,0 +1,28 @@
+.project-page-container {
+  display: flex;
+}
+
+.single-project-container {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.project-title {
+  font-size: 16px;
+}
+.project-images {
+  width: 55%;
+  display: grid;
+  justify-content: center;
+}
+.links {
+  color: white;
+  text-decoration: none;
+}
+.tech-list {
+  margin-bottom: 30px;
+}
+.project-photo {
+  height: 700px;
+  max-width: 900px;
+}

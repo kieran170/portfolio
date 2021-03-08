@@ -1,14 +1,18 @@
 import "./App.css";
-import Header from "./components/Header/Header";
-import Body from "./components/Body/Body";
-import Footer from "./components/Footer/Footer";
+import { Router } from "@reach/router";
+import Homepage from "./components/Homepage";
+import ProjectsPage from "./components/Projects/ProjectsPage";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Body />
-      <Footer />
+      <Router>
+        <Homepage path="/" />
+        <ProjectsPage path="gig-buddy" />
+        <ProjectsPage path="nc-news" />
+        <ProjectsPage path="ziut" />
+        <ProjectsPage path="slugboy-brewery" />
+      </Router>
     </div>
   );
 }

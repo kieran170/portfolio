@@ -5,6 +5,7 @@ export default function Info() {
   return (
     <div className="body-info-container">
       <p className="body-info-name-title">Kieran Cookson</p>
+      <p className="line"></p>
       <p className="body-info-text-description">
         I'm Kieran, a Junior Software Engineer
       </p>

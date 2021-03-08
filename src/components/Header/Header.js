@@ -2,11 +2,14 @@ import React from "react";
 import "./Header.css";
 import { ReactComponent as Github } from "../../images/github.svg";
 import { ReactComponent as Linkedin } from "../../images/linkedin.svg";
+import { Link } from "@reach/router";
 
 export default function Header() {
   return (
     <header className="header-container">
-      <p className="header-text-work">Work</p>
+      <Link className="link" to="/">
+        <p className="header-text-work">Back Home</p>
+      </Link>
       <p className="header-Github">
         <a href="https://github.com/kieran170" target="blank">
           <Github />
