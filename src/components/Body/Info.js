@@ -25,7 +25,7 @@ export default function Info() {
       </ul>
       <button className="get-in-touch-button">
         <Mail />
-        Get in touch
+        <p get-in-touch-button-text>Get in touch</p>
       </button>
     </div>
   );

@@ -1,7 +1,8 @@
+.flex-inline {
+  display: flex;
+}
 .body-info-container {
-  border: 1px white solid;
   width: 35%;
-  display: inline-flex;
 }
 .body-info-text-description {
   font-size: 60px;
@@ -39,7 +40,6 @@
   font-size: 16px;
 }
 .get-in-touch-button {
-  width: 128px;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -49,8 +49,10 @@
   padding: 12px;
   margin-top: 16px;
 }
+.get-in-touch-button-text {
+  margin: 2px 0 0 6px;
+}
 .projects-list-container {
-  display: inline-flex;
 }
 .projects-text {
   color: white;

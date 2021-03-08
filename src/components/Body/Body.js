@@ -5,7 +5,7 @@ import ProjectsList from "./ProjectsList";
 
 export default function Body() {
   return (
-    <main>
+    <main className="flex-inline">
       <Info />
       <ProjectsList />
     </main>
