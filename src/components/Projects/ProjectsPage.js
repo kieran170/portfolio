@@ -2,11 +2,8 @@ import React, { useState, useEffect } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./projects.css";
-import ChatPage from "../../images/gigBuddyChat.png";
 import EventsListPage from "../../images/gigBuddyEventList.png";
 import HomePage from "../../images/gigBuddyLoginPage.png";
-import ProfilePage from "../../images/gigBuddyProfile.png";
-import EventPage from "../../images/gigBuddyEventPage.png";
 import ApiServer from "../../images/apiServer(ncNews).png";
 import HomePagenc from "../../images/homePage(ncNews).png";
 import postComment from "../../images/postComments(ncNews).png";
@@ -49,19 +46,10 @@ export default function ProjectsPage({ path }) {
       githubLink: "https://github.com/kieran170/nc-project",
       photo1: HomePage,
       photo2: EventsListPage,
-      photo3: EventPage,
-      photo4: ProfilePage,
-      photo5: ChatPage,
       photo1text:
         "Profile page which requires a correctly formatted email address and password of 6 characters or more, using firebase authentication",
       photo2text:
         "Events list page where you can search and see all of the events in your area, done using axios and ticketMaster Api",
-      photo3text:
-        "A specific gig page where users can register interest in finding a gig buddy",
-      photo4text:
-        "Profile page where you can set a bio and change your avatar so users can identify you in the chat messages",
-      photo5text:
-        "Private chat page where you can instant message between your self and other users of the app",
     };
     const ncNews = {
       date: "February 2021",
@@ -115,12 +103,6 @@ export default function ProjectsPage({ path }) {
       setPhoto1Text(gigBuddy.photo1text);
       setPhoto2(gigBuddy.photo2);
       setPhoto2Text(gigBuddy.photo2text);
-      setPhoto3(gigBuddy.photo3);
-      setPhoto3Text(gigBuddy.photo3text);
-      setPhoto4(gigBuddy.photo4);
-      setPhoto4Text(gigBuddy.photo4text);
-      setPhoto5(gigBuddy.photo5);
-      setPhoto5Text(gigBuddy.photo5text);
     }
     if (url === "nc-news") {
       setProjectDate(ncNews.date);
@@ -250,37 +232,6 @@ export default function ProjectsPage({ path }) {
                   alt="second project page"
                 />
                 <p className="project-photo-text">{photo2text}</p>{" "}
-              </>
-            )}
-            {photo3 && (
-              <>
-                <img
-                  className="project-photo-gig-buddy"
-                  src={photo3}
-                  alt="third project page"
-                />
-                <p className="project-photo-text">{photo3text}</p>
-              </>
-            )}
-            {photo4 && (
-              <>
-                {" "}
-                <img
-                  className="project-photo-gig-buddy"
-                  src={photo4}
-                  alt="fourth project page"
-                />
-                <p className="project-photo-text">{photo4text}</p>{" "}
-              </>
-            )}
-            {photo5 && (
-              <>
-                <img
-                  className="project-photo-gig-buddy"
-                  src={photo5}
-                  alt="fourth project page"
-                />
-                <p className="project-photo-text">{photo5text}</p>{" "}
               </>
             )}
           </div>
