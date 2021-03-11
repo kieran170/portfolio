@@ -1,5 +1,7 @@
 .project-page-container {
   display: flex;
+  min-height: 72vh;
+  margin-bottom: 30px;
 }
 
 .single-project-container {
@@ -40,36 +42,15 @@
 @media only screen and (max-width: 768px) {
   .project-page-container {
     display: block;
+    padding: 15px;
   }
   .single-project-container {
+    box-sizing: border-box;
     width: 100%;
-    padding-bottom: 15px;
-    margin-left: 15px;
-  }
-  h1 {
-  }
-  .project-title {
-  }
-  .project-text {
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 94%;
-  }
-  .links {
-    padding-left: 15px;
-  }
-  .project-photo {
-    padding-left: 15px;
+    margin: 0;
   }
   .project-images {
-    width: 92%;
-  }
-  .project-photo-gig-buddy {
     width: 100%;
-    padding-left: 15px;
-  }
-  .project-photo-text {
-    padding-left: 15px;
-    width: 92%;
+    box-sizing: border-box;
   }
 }

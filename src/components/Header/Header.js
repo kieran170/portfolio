@@ -10,16 +10,18 @@ export default function Header() {
       <Link className="link" to="/">
         <p className="header-text-work">Home</p>
       </Link>
-      <p className="header-Github">
-        <a href="https://github.com/kieran170" target="blank">
+      <div className="header-socials">
+        <a
+          className="socials-margin"
+          href="https://github.com/kieran170"
+          target="blank"
+        >
           <Github />
         </a>
-      </p>
-      <p className="header-Linkedin">
         <a href="https://www.linkedin.com/in/kieran-cookson/" target="blank">
           <Linkedin />
         </a>
-      </p>
+      </div>
     </header>
   );
 }

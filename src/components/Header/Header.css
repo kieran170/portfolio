@@ -1,33 +1,24 @@
 .header-container {
-  height: 108px;
-  margin-left: 84px;
+  margin: 32px 84px 0 84px;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+.header-socials {
+  font-size: 20px;
+  display: inline-flex;
 }
 .header-text-work {
-  margin-top: 32px;
   font-size: 20px;
   display: inline-flex;
-}
-.header-Github {
-  display: inline-flex;
-  font-size: 20px;
-  margin-left: 85%;
-}
-.header-Linkedin {
-  display: inline-flex;
-  font-size: 20px;
-  margin-left: 1%;
+  margin: 0;
 }
 .header-text-work:hover {
   border-bottom: 2px #2c96dd solid;
 }
 @media only screen and (max-width: 768px) {
-  .header-Github {
-    margin-left: 66%;
-  }
-  .header-text-work {
-    padding-left: 15px;
-  }
   .header-container {
-    margin-left: 0px;
+    margin: 30px 15px;
+    height: 40px;
   }
 }

@@ -18,7 +18,9 @@ export default function ProjectListFirst() {
         <button className="tech-button">React Native</button>
         <button className="tech-button">Firestore/Firebase</button>
         <button className="tech-button">Axios</button>
-        <h2>Gig Buddy</h2>
+        <Link className="link" to={"/gig-buddy"}>
+          <h2>Gig Buddy</h2>
+        </Link>
         <Line />
         <p className="project-info">
           Gig buddy was my final project on the Northcoders bootcamp me and 4
@@ -42,8 +44,9 @@ export default function ProjectListFirst() {
         <button className="tech-button">CSS</button>
         <button className="tech-button">PSQL</button>
         <button className="tech-button">Axios</button>
-
-        <h2>NC News</h2>
+        <Link className="link" to={"/nc-news"}>
+          <h2>NC News</h2>
+        </Link>
         <Line />
         <p className="project-info">
           NC news is a react app that i created on the Northcoders bootcamp,
@@ -66,8 +69,9 @@ export default function ProjectListFirst() {
         </Link>
         <button className="tech-button">HTML</button>
         <button className="tech-button">CSS</button>
-
-        <h2>Zuit</h2>
+        <Link className="link" to={"/ziut"}>
+          <h2>Zuit</h2>
+        </Link>
         <Line />
         <p className="project-info">
           Ziut was a practise project i did before starting the Northcoders
@@ -88,8 +92,9 @@ export default function ProjectListFirst() {
         </Link>
         <button className="tech-button">HTML</button>
         <button className="tech-button">CSS</button>
-
-        <h2>SlugBoy Brewery</h2>
+        <Link className="link" to={"/slugboy-brewery"}>
+          <h2>SlugBoy Brewery</h2>
+        </Link>
         <Line />
         <p className="project-info">
           SlugBoy Brewery website was the first project i started when i was
