@@ -1,12 +1,14 @@
 import React from "react";
 import { ReactComponent as Mail } from "../../images/Mail.svg";
 import me from "../../images/me.jpg";
+import { ReactComponent as Line } from "../../images/Rectangle1.svg";
 
 export default function Info() {
   return (
     <div className="body-info-container">
-      <p className="body-info-name-title">Kieran Cookson</p>
-      <p className="line"></p>
+      <p className="body-info-name-title">
+        <Line className="project-line" /> Kieran Cookson
+      </p>
       <img className="me-photo" src={me} alt="me" />
       <p className="body-info-text-description">
         I'm Kieran,<br></br> a Junior Software Engineer
@@ -26,11 +28,9 @@ export default function Info() {
         <li className="list-items">SQL/PSQL</li>
         <li className="list-items">JSX</li>
       </ul>
-      <a href="mailto:kieran170@hotmail.co.uk">
-        <button className="get-in-touch-button">
-          <Mail />
-          <p get-in-touch-button-text>Get in touch</p>
-        </button>
+      <a className="get-in-touch-button" href="mailto:kieran170@hotmail.co.uk">
+        <Mail className="mail-button" />
+        <p className="get-in-touch-button-text">Get in touch</p>
       </a>
     </div>
   );

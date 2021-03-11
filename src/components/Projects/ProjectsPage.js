@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./projects.css";
-import EventsListPage from "../../images/gigBuddyEventList.png";
-import HomePage from "../../images/gigBuddyLoginPage.png";
+import gigBuddya from "../../images/gigBuddy1.jpeg";
+import gigBuddyb from "../../images/gigBuddy2.jpeg";
 import ApiServer from "../../images/apiServer(ncNews).png";
 import HomePagenc from "../../images/homePage(ncNews).png";
 import postComment from "../../images/postComments(ncNews).png";
@@ -11,6 +11,7 @@ import topicsPage from "../../images//topicsPage(ncNews).png";
 import authorPage from "../../images/authorPage(ncNews).png";
 import ziutHomePage from "../../images/ziut.png";
 import slugboyHomePage from "../../images/slug-boy.png";
+import { ReactComponent as Line } from "../../images/Rectangle1.svg";
 
 export default function ProjectsPage({ path }) {
   const [url, seturl] = useState(path);
@@ -44,8 +45,8 @@ export default function ProjectsPage({ path }) {
         "Firebase/Firestore",
       ],
       githubLink: "https://github.com/kieran170/nc-project",
-      photo1: HomePage,
-      photo2: EventsListPage,
+      photo1: gigBuddya,
+      photo2: gigBuddyb,
       photo1text:
         "Profile page which requires a correctly formatted email address and password of 6 characters or more, using firebase authentication",
       photo2text:
@@ -85,7 +86,7 @@ export default function ProjectsPage({ path }) {
     };
     const slugboyBrewery = {
       date: "January 2020",
-      title: "slugboyBrewery",
+      title: "Slugboy Brewery",
       projectInfo:
         "slugboyBrewery was my first ever project i had started when my friends decided they were going to start brewing beer at home just before lockdown started i was inspired to try and create them a website and this is where i started learning myself HTML and CSS",
       projectTechnologies: ["HTML", "CSS"],
@@ -144,10 +145,14 @@ export default function ProjectsPage({ path }) {
       <Header />
       <main className="project-page-container">
         <div className="single-project-container">
-          <p className="project-title">{projectDate}</p>
+          <p className="project-title">
+            {" "}
+            <Line className="project-line" />
+            {projectDate}
+          </p>
           <h1>{projectTitle}</h1>
-          <p>{projectInfo}</p>
-          <p>Technologies Used</p>
+          <p className="project-text">{projectInfo}</p>
+          <p className="project-text">Technologies Used</p>
           <ul className="tech-list">
             {projectTechnologies.map((tech) => {
               return <li>{tech}</li>;
@@ -155,14 +160,15 @@ export default function ProjectsPage({ path }) {
           </ul>
           {githubLink.length > 0 && (
             <a className="links" href={githubLink} target="blank">
-              Github repo link ---- {githubLink}
+              Github repo link <br></br> {githubLink}
               <br></br>
               <br></br>
             </a>
           )}
           {hostedLink.length > 0 && (
-            <a className="links" href={hostedLink}>
-              Hosted Version ---- {hostedLink}
+            <a className="links" href={hostedLink} target="blank">
+              Hosted Version <br></br>
+              {hostedLink}
             </a>
           )}
         </div>
@@ -173,7 +179,7 @@ export default function ProjectsPage({ path }) {
               src={photo1}
               alt="first project page"
             />
-            <p>{photo1text}</p>
+            <p className="project-text">{photo1text}</p>
             {photo2 && (
               <>
                 <img
@@ -181,7 +187,7 @@ export default function ProjectsPage({ path }) {
                   src={photo2}
                   alt="second project page"
                 />
-                <p>{photo2text}</p>{" "}
+                <p className="project-text">{photo2text}</p>{" "}
               </>
             )}
             {photo3 && (
@@ -191,7 +197,7 @@ export default function ProjectsPage({ path }) {
                   src={photo3}
                   alt="third project page"
                 />
-                <p>{photo3text}</p>
+                <p className="project-text">{photo3text}</p>
               </>
             )}
             {photo4 && (
@@ -202,7 +208,7 @@ export default function ProjectsPage({ path }) {
                   src={photo4}
                   alt="fourth project page"
                 />
-                <p>{photo4text}</p>{" "}
+                <p className="project-text">{photo4text}</p>{" "}
               </>
             )}
             {photo5 && (
@@ -212,7 +218,7 @@ export default function ProjectsPage({ path }) {
                   src={photo5}
                   alt="fourth project page"
                 />
-                <p>{photo5text}</p>{" "}
+                <p className="project-text">{photo5text}</p>{" "}
               </>
             )}
           </div>

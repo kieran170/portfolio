@@ -1,5 +1,6 @@
 .header-container {
   height: 108px;
+  margin-left: 84px;
 }
 .header-text-work {
   margin-top: 32px;
@@ -9,7 +10,7 @@
 .header-Github {
   display: inline-flex;
   font-size: 20px;
-  margin-left: 80%;
+  margin-left: 85%;
 }
 .header-Linkedin {
   display: inline-flex;
@@ -18,4 +19,15 @@
 }
 .header-text-work:hover {
   border-bottom: 2px #2c96dd solid;
+}
+@media only screen and (max-width: 768px) {
+  .header-Github {
+    margin-left: 66%;
+  }
+  .header-text-work {
+    padding-left: 15px;
+  }
+  .header-container {
+    margin-left: 0px;
+  }
 }
