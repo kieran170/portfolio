@@ -12,6 +12,7 @@ import authorPage from "../../images/authorPage(ncNews).png";
 import ziutHomePage from "../../images/ziut.png";
 import slugboyHomePage from "../../images/slug-boy.png";
 import { ReactComponent as Line } from "../../images/Rectangle1.svg";
+import Video from "../Video";
 
 export default function ProjectsPage({ path }) {
   const [url, seturl] = useState(path);
@@ -247,6 +248,7 @@ export default function ProjectsPage({ path }) {
           </div>
         ) : (
           <div className="project-images">
+            <Video className="video" />
             <img
               className="project-photo-gig-buddy"
               src={photo1}
