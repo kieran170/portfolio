@@ -23,9 +23,9 @@ export default function ProjectListFirst() {
         </Link>
         <Line />
         <p className="project-info">
-          Gig buddy was my final project on the Northcoders bootcamp me and 4
-          others had to create and design any app, we decided to create a social
-          app to help people find others to go to gigs with safely.{" "}
+          Gig Buddy: A cross platform mobile application built to allow users to
+          find and socialise with others who are attending the same gig as
+          themselves, safely.{" "}
         </p>
         <Link className="link" to={"/gig-buddy"}>
           Read More <ReadMoreArrow />
@@ -49,11 +49,9 @@ export default function ProjectListFirst() {
         </Link>
         <Line />
         <p className="project-info">
-          NC news is a react app that i created on the Northcoders bootcamp,
-          creating a database to sort information about articles topics and
-          authors using PSQL i then made a front end application using the back
-          end i had built. Nc is a 'reddit' styled web application allowing
-          users to browse articles up and down vote whilst also leaving comments
+          Nc News: A 'Reddit' styled web application built using React. It
+          allows users to browse for certain articles, and vote and comment on
+          their favourites.
         </p>
         <Link className="link" to={"/nc-news"}>
           Read More <ReadMoreArrow />
@@ -74,9 +72,8 @@ export default function ProjectListFirst() {
         </Link>
         <Line />
         <p className="project-info">
-          Ziut was a practise project i did before starting the Northcoders
-          bootcamp, using my self taught knowledge of CSS and HTML i built the
-          front to a architectural company
+          Ziut: A website homepage built for an architectural company to
+          advertise in their line of work. Built using HTML and CSS.
         </p>
         <Link className="link" to={"/ziut"}>
           Read More <ReadMoreArrow />
@@ -97,9 +94,8 @@ export default function ProjectListFirst() {
         </Link>
         <Line />
         <p className="project-info">
-          SlugBoy Brewery website was the first project i started when i was
-          learning CSS and HTML, my friends had started a home brewery and in
-          lockdown 2020 and i wanted to see if i could make them a website
+          SlugBoy Brewery: A local home brewery company that required a website
+          to advertise their products. Built using HTML and CSS.
         </p>
         <Link className="link" to={"/slugboy-brewery"}>
           Read More <ReadMoreArrow />
