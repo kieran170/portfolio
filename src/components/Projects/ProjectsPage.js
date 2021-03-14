@@ -35,9 +35,15 @@ export default function ProjectsPage({ path }) {
   useEffect(() => {
     const gigBuddy = {
       date: "March 2021",
-      title: "Gig buddy",
-      projectInfo:
-        "Gig buddy is a cross platfrom mobile application and it was my Final project on the northcoders bootcamp be and my team had to create and design a app of or choice. We created Gig buddy for people who struggle to find others to go to gigs with. The built in chat function allows for users to talk in a safe way. we used firestore/firebase to store the users data and also took advantage of firestores live database to allow for realtime chat all on our app. The front end is built using react native and also uses axios to get gig information from ticketmasters API,  ",
+      title: "Gig Buddy",
+      projectInfo: `Gig Buddy is a cross platform mobile application that was part of my final project for Northcoders. 
+          The team and myself design and developed this functional application for people who often struggle 
+          to find others to attend gigs with. It includes a built in private chat that allows users to talk in 
+          a safe way. We used Firestore/Firebase to store the users data and also took advantage of Firestore's 
+          live database to allow for realtime chat on our app. The front end is built using React Native, which 
+          allows for cross platform usage, in addition to this, we used Axios to retrieve gig information from 
+          Ticketmaster's public API.
+        `,
       projectTechnologies: [
         "Javascript",
         "React Native",
@@ -47,17 +53,33 @@ export default function ProjectsPage({ path }) {
       githubLink: "https://github.com/kieran170/nc-project",
       photo1: gigBuddya,
       photo2: gigBuddyb,
-      photo1text:
-        "Profile page which requires a correctly formatted email address and password of 6 characters or more, using firebase authentication",
-      photo2text:
-        "Events list page where you can search and see all of the events in your area, done using axios and ticketMaster Api",
+      photo1text: `The above image displays three of the main pages of the application, the sign up/ sign in screen, the event 
+        list and the event details page. The first screen uses Firebase Authentication where the user is required to enter
+        a registered email and password containing at least 6 characters. Once the user has gained access to the application, they can
+        see a list of all their closest gigs within a certain mile radius. You can search for different locations and find 
+        the next 20 upcoming gigs in that area. Clicking on the specific gig will open the event details page where the user 
+        will be able to view details of the event, in addition to a list of users who are also attending the gig and looking 
+        for a Gig Buddy, and a button to register your interest in finding a Gig Buddy.`,
+      photo2text: `The next image shows the users customizable profile page, their contacts list and a private chat room between themselves
+        and others users who are registered on the event page as 'looking for a buddy'. We made use of Firestores' live database 
+        to allow the users to talk in real time.`,
     };
     const ncNews = {
       date: "February 2021",
       title: "Nc News",
-      projectInfo:
-        "Nc News is a 'reddit' styled web and mobile application. i had to create a back end server to save users profiles, articles and vote count i did this using SQL/PSQL, through testing with supertest i enabled users of the app to read articles, post comments and vote in real time. The front end was made using react.",
-      projectTechnologies: ["HTML", "CSS", "Javascript", "React", "SQL/PSQL"],
+      projectInfo: `Nc News is a 'Reddit' styled web and mobile application which was built using SQL/PSQL. A back end server was
+        created to save user profiles, articles and vote counts. Throughout this project, thorough testing was carried
+        out using Supertest and Jest ensuring that users were able to read articles, post comments, and vote in real time,
+        successfully. The front end of the application was built using React and CSS.`,
+      projectTechnologies: [
+        "CSS",
+        "Javascript",
+        "React",
+        "Axios",
+        "Supertest",
+        "Jest",
+        "SQL/PSQL",
+      ],
       githubLink: "https://github.com/kieran170/Nc-News-App",
       hostedVersion: "https://nc-newss-app.netlify.app/",
       photo1: ApiServer,
@@ -66,32 +88,33 @@ export default function ProjectsPage({ path }) {
       photo4: authorPage,
       photo5: postComment,
       photo1text:
-        "Back end Api i created to save all users data, made using SQL/PSQL",
+        "Back end API that was created to save all user data, built using SQL/PSQL.",
       photo2text:
-        "Home page where you can see the latest articles including the most popular article",
+        "Home page where you can see the latest articles including the most popular article, determined by the vote count.",
       photo3text:
-        "Articles filtered by topic, only topics that show up are 'cooking' in this image",
-      photo4text: "Articles that are written by a specific author",
+        "Articles filtered by topic, screenshot shows articles where their topic is 'Cooking'.",
+      photo4text: "Articles that are written by a specific author.",
       photo5text:
-        "The specific article page where you can add comments and up and down vote the comment and article itself",
+        "The single article page where you can add comments and 'up' and 'down' vote the comment and article itself.",
     };
     const ziut = {
       date: "May 2020",
       title: "Ziut",
-      projectInfo:
-        "Ziut is a project i started before the Northcoders bootcamp, using only HTML and CSS which was all self taught",
+      projectInfo: `Zuit is a project I began working on to gain more experience using HTML and CSS. I was able to collaborate 
+       successfully with a designer to build a user friendly homepage.`,
       projectTechnologies: ["HTML", "CSS"],
       photo1: ziutHomePage,
-      photo1text: "The home page for ziut ",
+      photo1text: "The home page for Ziut.",
     };
     const slugboyBrewery = {
       date: "January 2020",
       title: "Slugboy Brewery",
-      projectInfo:
-        "slugboyBrewery was my first ever project i had started when my friends decided they were going to start brewing beer at home just before lockdown started i was inspired to try and create them a website and this is where i started learning myself HTML and CSS",
+      projectInfo: `Slugboy Brewery was my first project and first time working with HTML and CSS. I was given a brief 
+        from a local company to build a website that advertised their stock. Slugboy Brewery allowed me to 
+        teach myself new technologies and really fall in love with the coding world.`,
       projectTechnologies: ["HTML", "CSS"],
       photo1: slugboyHomePage,
-      photo1text: "The home page to slugboy brewery",
+      photo1text: "The home page to Slugboy Brewery.",
     };
 
     if (url === "gig-buddy") {
