@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.ce31b20b.chunk.css",
+    "main.js": "/portfolio/static/js/main.2d6ea1ff.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2d6ea1ff.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.71c53a7c.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.71c53a7c.js.map",
+    "static/js/2.169bf316.chunk.js": "/portfolio/static/js/2.169bf316.chunk.js",
+    "static/js/2.169bf316.chunk.js.map": "/portfolio/static/js/2.169bf316.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.ce31b20b.chunk.css.map": "/portfolio/static/css/main.ce31b20b.chunk.css.map",
+    "static/js/2.169bf316.chunk.js.LICENSE.txt": "/portfolio/static/js/2.169bf316.chunk.js.LICENSE.txt",
+    "static/media/Mail.1bf2f7fe.svg": "/portfolio/static/media/Mail.1bf2f7fe.svg",
+    "static/media/Rectangle1.4d48a2bb.svg": "/portfolio/static/media/Rectangle1.4d48a2bb.svg",
+    "static/media/Vector.eb293113.svg": "/portfolio/static/media/Vector.eb293113.svg",
+    "static/media/apiServer(ncNews).08c3def1.png": "/portfolio/static/media/apiServer(ncNews).08c3def1.png",
+    "static/media/authorPage(ncNews).e6843660.png": "/portfolio/static/media/authorPage(ncNews).e6843660.png",
+    "static/media/gigBuddy1.50ee5310.jpeg": "/portfolio/static/media/gigBuddy1.50ee5310.jpeg",
+    "static/media/gigBuddy2.ccd462e6.jpeg": "/portfolio/static/media/gigBuddy2.ccd462e6.jpeg",
+    "static/media/github.c232851e.svg": "/portfolio/static/media/github.c232851e.svg",
+    "static/media/homePage(ncNews).94af51f2.png": "/portfolio/static/media/homePage(ncNews).94af51f2.png",
+    "static/media/linkedin.5ca656b0.svg": "/portfolio/static/media/linkedin.5ca656b0.svg",
+    "static/media/me.999086a8.jpg": "/portfolio/static/media/me.999086a8.jpg",
+    "static/media/postComments(ncNews).ce71c265.png": "/portfolio/static/media/postComments(ncNews).ce71c265.png",
+    "static/media/slug-boy.8386293c.png": "/portfolio/static/media/slug-boy.8386293c.png",
+    "static/media/topicsPage(ncNews).5e443a87.png": "/portfolio/static/media/topicsPage(ncNews).5e443a87.png",
+    "static/media/ziut.d44ca476.png": "/portfolio/static/media/ziut.d44ca476.png",
+    "static/media/ziutPreview.5f5f2a1e.png": "/portfolio/static/media/ziutPreview.5f5f2a1e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.71c53a7c.js",
+    "static/js/2.169bf316.chunk.js",
+    "static/css/main.ce31b20b.chunk.css",
+    "static/js/main.2d6ea1ff.chunk.js"
+  ]
+}
