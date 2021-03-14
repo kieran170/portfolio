@@ -68,7 +68,7 @@ export default function ProjectListFirst() {
         <button className="tech-button">HTML</button>
         <button className="tech-button">CSS</button>
         <Link className="link" to={"/ziut"}>
-          <h2>Zuit</h2>
+          <h2>Ziut</h2>
         </Link>
         <Line />
         <p className="project-info">
