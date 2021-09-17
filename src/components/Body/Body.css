@@ -68,12 +68,10 @@
   color: white;
 }
 .project-container {
-  min-width: 75%;
   padding: 15px;
 }
 .project-image {
-  height: 360px;
-  width: 100%;
+  height: 543px;
 }
 .tech-button {
   font-weight: 500;

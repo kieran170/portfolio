@@ -15,8 +15,9 @@
 }
 .project-images {
   width: 50%;
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .links {
   color: white;
