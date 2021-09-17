@@ -4,6 +4,8 @@ import Footer from "../Footer/Footer";
 import "./projects.css";
 import gigBuddya from "../../images/gigBuddy1.jpeg";
 import gigBuddyb from "../../images/gigBuddy2.jpeg";
+import football from '../../images/football.png'
+import football2 from '../../images/football2.png'
 import ApiServer from "../../images/apiServer(ncNews).png";
 import HomePagenc from "../../images/homePage(ncNews).png";
 import postComment from "../../images/postComments(ncNews).png";
@@ -33,6 +35,31 @@ export default function ProjectsPage({ path }) {
   const [photo5text, setPhoto5Text] = useState("");
 
   useEffect(() => {
+    const planetFootball = {
+      date: "July 2021",
+      title: "Football Planet",
+      projectInfo: `Football Planet is a React web app, written in TypeScript, that allows users to quickly follow and check up on their favorite football,
+      teams or leagues. Landing on the page you will see a sign up screen where you can pick your favorite league, this then sends a
+      request for data from http://api.football-data.org and the league you pick will be displayed on screen with the leagues 
+      top scorers. You can browse and set over 100 clubs as your favorite team so you never miss out on any updates.
+      `,
+      projectTechnologies: [
+        "TypeScript",
+        "React ",
+        "Axios",
+        "Material UI",
+      ],
+      githubLink: "https://github.com/kieran170/Football-Type",
+      hostedVersion: "https://football-planet.netlify.app/",
+      photo1: football,
+      photo2: football2,
+      photo1text: `The above image displays the league you have chosen on the login page as default however you can changes this
+      using the select at the top  left of the screen.`,
+      photo2text: `The next image shows the single team page with information on the teams past and future fixtures alongside the 
+      the whole squad with positions and nationality available, currently only the brazilian league has submitted teams so the rest
+      of the leagues are unavailable, however when the season starts all teams will be available and in V2.0 single player stats will
+      be available`
+    };
     const gigBuddy = {
       date: "March 2021",
       title: "Gig Buddy",
@@ -162,7 +189,19 @@ export default function ProjectsPage({ path }) {
       setPhoto1(slugboyBrewery.photo1);
       setPhoto1Text(slugboyBrewery.photo1text);
     }
-  }, []);
+    if (url === 'football-planet') {
+      setProjectDate(planetFootball.date);
+      setProjectTitle(planetFootball.title);
+      setGitHubLink(planetFootball.githubLink);
+      setHostedLink(planetFootball.hostedVersion);
+      setPhoto1(planetFootball.photo1);
+      setPhoto2(planetFootball.photo2);
+      setProjectTechnologies(planetFootball.projectTechnologies);
+      setPhoto1Text(planetFootball.photo1text);
+      setPhoto2Text(planetFootball.photo2text);
+      setProjectInfo(planetFootball.projectInfo);
+    }
+  }, [url]);
   return (
     <>
       <Header />

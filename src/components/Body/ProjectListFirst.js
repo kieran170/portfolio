@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "@reach/router";
 import slugboyHomePage from "../../images/slug-boy.png";
 import ziutPreview from "../../images/ziutPreview.png";
+import football from '../../images/football.png'
 import ncNewsHomePage from "../../images/topicsPage(ncNews).png";
 import gigBuddya from "../../images/gigBuddy1.jpeg";
 import { ReactComponent as ReadMoreArrow } from "../../images/Vector.svg";
@@ -10,6 +11,27 @@ import { ReactComponent as Line } from "../../images/Rectangle1.svg";
 export default function ProjectListFirst() {
   return (
     <div className="projects-list-container">
+      <div className="project-container">
+        <Link to={"/football-planet"}>
+          <img className="project-image" src={football} alt="first project" />
+        </Link>
+        <button className="tech-button">Typescript</button>
+        <button className="tech-button">React</button>
+        <button className="tech-button">Axios</button>
+        <button className="tech-button">Material UI</button>
+        <Link className="link" to={"/football-planet"}>
+          <h2>Football Planet</h2>
+        </Link>
+        <Line />
+        <p className="project-info">
+          A web app built using TypseScript and React, gives users the ability
+          to see league tables and scores whilst checking in on your favorite 
+          football team, create a account and start browsing now.
+        </p>
+        <Link className="link" to={"/football-planet"}>
+          Read More <ReadMoreArrow />
+        </Link>
+      </div>
       <div className="project-container">
         <Link to={"/gig-buddy"}>
           <img className="project-image" src={gigBuddya} alt="first project" />

@@ -9,6 +9,7 @@ function App() {
       <Router>
         <Homepage path="/" />
         <ProjectsPage path="gig-buddy" />
+        <ProjectsPage path="football-planet" />
         <ProjectsPage path="nc-news" />
         <ProjectsPage path="ziut" />
         <ProjectsPage path="slugboy-brewery" />

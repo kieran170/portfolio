@@ -19,14 +19,16 @@ export default function Info() {
         and experience using:
       </p>
       <ul className="list-container">
-        <li className="list-items">HTML & CSS</li>
         <li className="list-items">Javascript</li>
+        <li className="list-items">HTML & CSS</li>
         <li className="list-items">React</li>
         <li className="list-items">React Native</li>
         <li className="list-items">Node Js</li>
         <li className="list-items">Axios</li>
+        <li className="list-items">Typescript</li>
         <li className="list-items">SQL/PSQL</li>
         <li className="list-items">JSX</li>
+        <li className="list-items">Material UI</li>
       </ul>
       <a className="get-in-touch-button" href="mailto:kieran170@hotmail.co.uk">
         <Mail className="mail-button" />

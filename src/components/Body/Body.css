@@ -77,14 +77,14 @@
 }
 .tech-button {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 8px;
   border-radius: 25px;
   background-image: linear-gradient(to bottom right, #2c96dd, #6c53df);
   color: white;
   padding: 12px;
   margin-top: 16px;
-  margin-right: 5px;
+  margin-right: 8px;
   border: aliceblue;
 }
 .tech-button:focus {
