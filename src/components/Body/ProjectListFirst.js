@@ -7,10 +7,34 @@ import ncNewsHomePage from "../../images/topicsPage(ncNews).png";
 import gigBuddya from "../../images/gigBuddy1.jpeg";
 import { ReactComponent as ReadMoreArrow } from "../../images/Vector.svg";
 import { ReactComponent as Line } from "../../images/Rectangle1.svg";
+import find1 from '../../images/find1.png'
 
 export default function ProjectListFirst() {
   return (
     <div className="projects-list-container">
+      <div className="project-container">
+        <Link to={"/find-a-side"}>
+          <img className="project-image" src={find1} alt="first project" />
+        </Link>
+        <button className="tech-button">Typescript</button>
+        <button className="tech-button">React</button>
+        <button className="tech-button">Firebase/Firestore</button>
+        <button className="tech-button">Semantic UI</button>
+        <button className="tech-button">SCSS</button>
+        <Link className="link" to={"/find-a-side"}>
+          <h2>Find-A-Side</h2>
+        </Link>
+        <Line />
+        <p className="project-info">
+          A gaming web app built using TypseScript and React with firebase/firestore for the database. 
+          Find-A-Side gives users the ability
+          to create a account and avatar to find friends all over the world to play games with or against 
+          create a account and start gaming now.
+        </p>
+        <Link className="link" to={"/find-a-side"}>
+          Read More <ReadMoreArrow />
+        </Link>
+      </div>
       <div className="project-container">
         <Link to={"/football-planet"}>
           <img className="project-image" src={football} alt="first project" />

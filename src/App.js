@@ -13,6 +13,7 @@ function App() {
         <ProjectsPage path="nc-news" />
         <ProjectsPage path="ziut" />
         <ProjectsPage path="slugboy-brewery" />
+        <ProjectsPage path="find-a-side" />
       </Router>
     </div>
   );

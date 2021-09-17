@@ -15,9 +15,12 @@ import ziutHomePage from "../../images/ziut.png";
 import slugboyHomePage from "../../images/slug-boy.png";
 import { ReactComponent as Line } from "../../images/Rectangle1.svg";
 import Video from "../Video";
+import find1 from '../../images/find1.png';
+import find2 from '../../images/find2.png';
+import find3 from '../../images/find3.png';
 
 export default function ProjectsPage({ path }) {
-  const [url, seturl] = useState(path);
+  const url = path;
   const [projectDate, setProjectDate] = useState("");
   const [projectTitle, setProjectTitle] = useState("");
   const [projectInfo, setProjectInfo] = useState("");
@@ -36,6 +39,26 @@ export default function ProjectsPage({ path }) {
   const [photo5text, setPhoto5Text] = useState("");
 
   useEffect(() => {
+    const findASide = {
+      date: "September 2021",
+      title: "Find-A-Side",
+      projectInfo: ``,
+      projectTechnologies: [
+        "TypeScript",
+        "React ",
+        "Firestore/Firestore",
+        "Semantic UI",
+        "SCSS",
+      ],
+      githubLink: "https://github.com/kieran170/FindASide",
+      hostedVersion: "https://findaside.netlify.app/",
+      photo1: find1,
+      photo2: find2,
+      photo3: find3,
+      photo1text: 'The above page is the homepage with a list of all the games you can create a lobby on. when clicking on the game you can view or create a lobby',
+      photo2text: 'This image shows the single game page where you can browse all the lobbies that have been created by other users or create one yourself',
+      photo3text: 'The next image shows you the lobby page. when a lobby has been created you can see who is in the lobby and you can live chat with people in the lobby.',
+    };
     const planetFootball = {
       date: "July 2021",
       title: "Football Planet",
@@ -201,6 +224,20 @@ export default function ProjectsPage({ path }) {
       setPhoto1Text(planetFootball.photo1text);
       setPhoto2Text(planetFootball.photo2text);
       setProjectInfo(planetFootball.projectInfo);
+    }
+    if (url === 'find-a-side') {
+      setProjectDate(findASide.date);
+      setProjectTitle(findASide.title);
+      setGitHubLink(findASide.githubLink);
+      setHostedLink(findASide.hostedVersion);
+      setPhoto1(findASide.photo1);
+      setPhoto2(findASide.photo2);
+      setPhoto3(findASide.photo3);
+      setProjectTechnologies(findASide.projectTechnologies);
+      setPhoto1Text(findASide.photo1text);
+      setPhoto2Text(findASide.photo2text);
+      setPhoto3Text(findASide.photo3text);
+      setProjectInfo(findASide.projectInfo);
     }
   }, [url]);
   return (
